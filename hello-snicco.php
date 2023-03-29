@@ -54,7 +54,7 @@ $runner = $kernel->container()->make(HttpKernelRunner::class);
 /*
  * If you want to you really, really fast and run the plugin right now if a route matches.
  */
-$run_right_now = true;
+$run_right_now = false;
 
 if ($run_right_now){
     $runner->run();
