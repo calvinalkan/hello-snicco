@@ -1,0 +1,12 @@
+{
+  "require": {
+    "nyholm/psr7": "^1.5",
+    "snicco/http-routing-bundle": "^1.6",
+    "snicco/pimple-bridge": "^1.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "HelloSnicco\\": "src"
+    }
+  }
+}

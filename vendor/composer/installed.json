@@ -1,0 +1,2122 @@
+{
+    "packages": [
+        {
+            "name": "laminas/laminas-httphandlerrunner",
+            "version": "2.2.0",
+            "version_normalized": "2.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-httphandlerrunner.git",
+                "reference": "eb670c5c7167cd218c61a8b4f6ab9ce339200c16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-httphandlerrunner/zipball/eb670c5c7167cd218c61a8b4f6ab9ce339200c16",
+                "reference": "eb670c5c7167cd218c61a8b4f6ab9ce339200c16",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || ~8.0.0 || ~8.1.0",
+                "psr/http-message": "^1.0",
+                "psr/http-message-implementation": "^1.0",
+                "psr/http-server-handler": "^1.0"
+            },
+            "require-dev": {
+                "laminas/laminas-coding-standard": "~2.4.0",
+                "laminas/laminas-diactoros": "^2.13.0",
+                "phpunit/phpunit": "^9.5.21",
+                "psalm/plugin-phpunit": "^0.17.0",
+                "vimeo/psalm": "^4.24.0"
+            },
+            "time": "2022-09-17T16:24:51+00:00",
+            "type": "library",
+            "extra": {
+                "laminas": {
+                    "config-provider": "Laminas\\HttpHandlerRunner\\ConfigProvider"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\HttpHandlerRunner\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Execute PSR-15 RequestHandlerInterface instances and emit responses they generate.",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "components",
+                "laminas",
+                "mezzio",
+                "psr-15",
+                "psr-7"
+            ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-httphandlerrunner/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-httphandlerrunner/issues",
+                "rss": "https://github.com/laminas/laminas-httphandlerrunner/releases.atom",
+                "source": "https://github.com/laminas/laminas-httphandlerrunner"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "install-path": "../laminas/laminas-httphandlerrunner"
+        },
+        {
+            "name": "nikic/fast-route",
+            "version": "v1.3.0",
+            "version_normalized": "1.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/FastRoute.git",
+                "reference": "181d480e08d9476e61381e04a71b34dc0432e812"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/FastRoute/zipball/181d480e08d9476e61381e04a71b34dc0432e812",
+                "reference": "181d480e08d9476e61381e04a71b34dc0432e812",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35|~5.7"
+            },
+            "time": "2018-02-13T20:26:39+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "FastRoute\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov",
+                    "email": "nikic@php.net"
+                }
+            ],
+            "description": "Fast request router for PHP",
+            "keywords": [
+                "router",
+                "routing"
+            ],
+            "support": {
+                "issues": "https://github.com/nikic/FastRoute/issues",
+                "source": "https://github.com/nikic/FastRoute/tree/master"
+            },
+            "install-path": "../nikic/fast-route"
+        },
+        {
+            "name": "nyholm/psr7",
+            "version": "1.5.1",
+            "version_normalized": "1.5.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Nyholm/psr7.git",
+                "reference": "f734364e38a876a23be4d906a2a089e1315be18a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Nyholm/psr7/zipball/f734364e38a876a23be4d906a2a089e1315be18a",
+                "reference": "f734364e38a876a23be4d906a2a089e1315be18a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "php-http/message-factory": "^1.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0"
+            },
+            "provide": {
+                "psr/http-factory-implementation": "1.0",
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "http-interop/http-factory-tests": "^0.9",
+                "php-http/psr7-integration-tests": "^1.0",
+                "phpunit/phpunit": "^7.5 || 8.5 || 9.4",
+                "symfony/error-handler": "^4.4"
+            },
+            "time": "2022-06-22T07:13:36+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Nyholm\\Psr7\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com"
+                },
+                {
+                    "name": "Martijn van der Ven",
+                    "email": "martijn@vanderven.se"
+                }
+            ],
+            "description": "A fast PHP7 implementation of PSR-7",
+            "homepage": "https://tnyholm.se",
+            "keywords": [
+                "psr-17",
+                "psr-7"
+            ],
+            "support": {
+                "issues": "https://github.com/Nyholm/psr7/issues",
+                "source": "https://github.com/Nyholm/psr7/tree/1.5.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Zegnat",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nyholm",
+                    "type": "github"
+                }
+            ],
+            "install-path": "../nyholm/psr7"
+        },
+        {
+            "name": "nyholm/psr7-server",
+            "version": "1.0.2",
+            "version_normalized": "1.0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Nyholm/psr7-server.git",
+                "reference": "b846a689844cef114e8079d8c80f0afd96745ae3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Nyholm/psr7-server/zipball/b846a689844cef114e8079d8c80f0afd96745ae3",
+                "reference": "b846a689844cef114e8079d8c80f0afd96745ae3",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "nyholm/nsa": "^1.1",
+                "nyholm/psr7": "^1.3",
+                "phpunit/phpunit": "^7.0 || ^8.5 || ^9.3"
+            },
+            "time": "2021-05-12T11:11:27+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Nyholm\\Psr7Server\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com"
+                },
+                {
+                    "name": "Martijn van der Ven",
+                    "email": "martijn@vanderven.se"
+                }
+            ],
+            "description": "Helper classes to handle PSR-7 server requests",
+            "homepage": "http://tnyholm.se",
+            "keywords": [
+                "psr-17",
+                "psr-7"
+            ],
+            "support": {
+                "issues": "https://github.com/Nyholm/psr7-server/issues",
+                "source": "https://github.com/Nyholm/psr7-server/tree/1.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Zegnat",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nyholm",
+                    "type": "github"
+                }
+            ],
+            "install-path": "../nyholm/psr7-server"
+        },
+        {
+            "name": "php-http/message-factory",
+            "version": "v1.0.2",
+            "version_normalized": "1.0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-http/message-factory.git",
+                "reference": "a478cb11f66a6ac48d8954216cfed9aa06a501a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-http/message-factory/zipball/a478cb11f66a6ac48d8954216cfed9aa06a501a1",
+                "reference": "a478cb11f66a6ac48d8954216cfed9aa06a501a1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "psr/http-message": "^1.0"
+            },
+            "time": "2015-12-19T14:08:53+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                }
+            ],
+            "description": "Factory interfaces for PSR-7 HTTP Message",
+            "homepage": "http://php-http.org",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "stream",
+                "uri"
+            ],
+            "support": {
+                "issues": "https://github.com/php-http/message-factory/issues",
+                "source": "https://github.com/php-http/message-factory/tree/master"
+            },
+            "install-path": "../php-http/message-factory"
+        },
+        {
+            "name": "pimple/pimple",
+            "version": "v3.5.0",
+            "version_normalized": "3.5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silexphp/Pimple.git",
+                "reference": "a94b3a4db7fb774b3d78dad2315ddc07629e1bed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/a94b3a4db7fb774b3d78dad2315ddc07629e1bed",
+                "reference": "a94b3a4db7fb774b3d78dad2315ddc07629e1bed",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "psr/container": "^1.1 || ^2.0"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "^5.4@dev"
+            },
+            "time": "2021-10-28T11:13:42+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.4.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "Pimple": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Pimple, a simple Dependency Injection Container",
+            "homepage": "https://pimple.symfony.com",
+            "keywords": [
+                "container",
+                "dependency injection"
+            ],
+            "support": {
+                "source": "https://github.com/silexphp/Pimple/tree/v3.5.0"
+            },
+            "install-path": "../pimple/pimple"
+        },
+        {
+            "name": "psr/container",
+            "version": "1.1.2",
+            "version_normalized": "1.1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "513e0666f7216c7459170d56df27dfcefe1689ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/513e0666f7216c7459170d56df27dfcefe1689ea",
+                "reference": "513e0666f7216c7459170d56df27dfcefe1689ea",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4.0"
+            },
+            "time": "2021-11-05T16:50:12+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container/tree/1.1.2"
+            },
+            "install-path": "../psr/container"
+        },
+        {
+            "name": "psr/event-dispatcher",
+            "version": "1.0.0",
+            "version_normalized": "1.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/event-dispatcher.git",
+                "reference": "dbefd12671e8a14ec7f180cab83036ed26714bb0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/event-dispatcher/zipball/dbefd12671e8a14ec7f180cab83036ed26714bb0",
+                "reference": "dbefd12671e8a14ec7f180cab83036ed26714bb0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.0"
+            },
+            "time": "2019-01-08T18:20:26+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\EventDispatcher\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Standard interfaces for event handling.",
+            "keywords": [
+                "events",
+                "psr",
+                "psr-14"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/event-dispatcher/issues",
+                "source": "https://github.com/php-fig/event-dispatcher/tree/1.0.0"
+            },
+            "install-path": "../psr/event-dispatcher"
+        },
+        {
+            "name": "psr/http-factory",
+            "version": "1.0.1",
+            "version_normalized": "1.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-factory.git",
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "psr/http-message": "^1.0"
+            },
+            "time": "2019-04-30T12:38:16+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for PSR-7 HTTP message factories",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "psr",
+                "psr-17",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-factory/tree/master"
+            },
+            "install-path": "../psr/http-factory"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "version_normalized": "1.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "2016-08-06T14:39:51+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/master"
+            },
+            "install-path": "../psr/http-message"
+        },
+        {
+            "name": "psr/http-server-handler",
+            "version": "1.0.1",
+            "version_normalized": "1.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-server-handler.git",
+                "reference": "aff2f80e33b7f026ec96bb42f63242dc50ffcae7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-server-handler/zipball/aff2f80e33b7f026ec96bb42f63242dc50ffcae7",
+                "reference": "aff2f80e33b7f026ec96bb42f63242dc50ffcae7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "psr/http-message": "^1.0"
+            },
+            "time": "2018-10-30T16:46:14+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Server\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP server-side request handler",
+            "keywords": [
+                "handler",
+                "http",
+                "http-interop",
+                "psr",
+                "psr-15",
+                "psr-7",
+                "request",
+                "response",
+                "server"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/http-server-handler/issues",
+                "source": "https://github.com/php-fig/http-server-handler/tree/master"
+            },
+            "install-path": "../psr/http-server-handler"
+        },
+        {
+            "name": "psr/http-server-middleware",
+            "version": "1.0.1",
+            "version_normalized": "1.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-server-middleware.git",
+                "reference": "2296f45510945530b9dceb8bcedb5cb84d40c5f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-server-middleware/zipball/2296f45510945530b9dceb8bcedb5cb84d40c5f5",
+                "reference": "2296f45510945530b9dceb8bcedb5cb84d40c5f5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "psr/http-message": "^1.0",
+                "psr/http-server-handler": "^1.0"
+            },
+            "time": "2018-10-30T17:12:04+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Server\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP server-side middleware",
+            "keywords": [
+                "http",
+                "http-interop",
+                "middleware",
+                "psr",
+                "psr-15",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/http-server-middleware/issues",
+                "source": "https://github.com/php-fig/http-server-middleware/tree/master"
+            },
+            "install-path": "../psr/http-server-middleware"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.1.4",
+            "version_normalized": "1.1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "2021-05-03T11:20:27+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/1.1.4"
+            },
+            "install-path": "../psr/log"
+        },
+        {
+            "name": "snicco/better-wp-api",
+            "version": "v1.6.0",
+            "version_normalized": "1.6.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/snicco/better-wp-api.git",
+                "reference": "35aaed2e49d02c6e7b74b3b3d9cde9cbf89aac74"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/snicco/better-wp-api/zipball/35aaed2e49d02c6e7b74b3b3d9cde9cbf89aac74",
+                "reference": "35aaed2e49d02c6e7b74b3b3d9cde9cbf89aac74",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0"
+            },
+            "conflict": {
+                "snicco/better-wp-cache": "<1.6.0",
+                "snicco/better-wp-cache-bundle": "<1.6.0",
+                "snicco/better-wp-cli": "<1.6.0",
+                "snicco/better-wp-cli-testing": "<1.6.0",
+                "snicco/better-wp-hooks": "<1.6.0",
+                "snicco/better-wp-hooks-bundle": "<1.6.0",
+                "snicco/better-wp-mail": "<1.6.0",
+                "snicco/better-wp-mail-bundle": "<1.6.0",
+                "snicco/better-wp-mail-testing": "<1.6.0",
+                "snicco/better-wpdb": "<1.6.0",
+                "snicco/better-wpdb-bundle": "<1.6.0",
+                "snicco/blade-bridge": "<1.6.0",
+                "snicco/blade-bundle": "<1.6.0",
+                "snicco/content-negotiation-middleware": "<1.6.0",
+                "snicco/debug-bundle": "<1.6.0",
+                "snicco/default-headers-middleware": "<1.6.0",
+                "snicco/eloquent": "<1.6.0",
+                "snicco/encryption-bundle": "<1.6.0",
+                "snicco/event-dispatcher": "<1.6.0",
+                "snicco/event-dispatcher-testing": "<1.6.0",
+                "snicco/guests-only-middleware": "<1.0.0",
+                "snicco/http-routing": "<1.6.0",
+                "snicco/http-routing-bundle": "<1.6.0",
+                "snicco/http-routing-testing": "<1.6.0",
+                "snicco/https-only-middleware": "<1.6.0",
+                "snicco/illuminate-container-bridge": "<1.6.0",
+                "snicco/kernel": "<1.6.0",
+                "snicco/kernel-testing": "<1.6.0",
+                "snicco/method-override-middleware": "<1.6.0",
+                "snicco/minimal-logger": "<1.6.0",
+                "snicco/must-match-route-middleware": "<1.6.0",
+                "snicco/no-robots-middleware": "<1.6.0",
+                "snicco/open-redirect-protection-middleware": "<1.6.0",
+                "snicco/payload-middleware": "<1.6.0",
+                "snicco/pimple-bridge": "<1.6.0",
+                "snicco/psr7-error-handler": "<1.6.0",
+                "snicco/redirect-middleware": "<1.6.0",
+                "snicco/session": "<1.6.0",
+                "snicco/session-bundle": "<1.6.0",
+                "snicco/session-psr16-bridge": "<1.6.0",
+                "snicco/session-testing": "<1.6.0",
+                "snicco/session-wp-bridge": "<1.6.0",
+                "snicco/share-cookies-middleware": "<1.6.0",
+                "snicco/signed-url": "<1.6.0",
+                "snicco/signed-url-psr15-bridge": "<1.6.0",
+                "snicco/signed-url-psr16-bridge": "<1.6.0",
+                "snicco/signed-url-testing": "<1.6.0",
+                "snicco/signed-url-wp-bridge": "<1.6.0",
+                "snicco/str-arr": "<1.6.0",
+                "snicco/templating": "<1.6.0",
+                "snicco/templating-bundle": "<1.6.0",
+                "snicco/testable-clock": "<1.6.0",
+                "snicco/testing-bundle": "<1.6.0",
+                "snicco/trailing-slash-middleware": "<1.6.0",
+                "snicco/wp-auth-only-middleware": "<1.6.0",
+                "snicco/wp-capability-middleware": "<1.6.0",
+                "snicco/wp-capapility-middleware": "<1.0.0",
+                "snicco/wp-guests-only-middleware": "<1.6.0",
+                "snicco/wp-nonce-middleware": "<1.6.0"
+            },
+            "require-dev": {
+                "codeception/codeception": "^4.1.29",
+                "lucatume/wp-browser": "^3.1.4",
+                "phpunit/phpunit": "^9.5.13"
+            },
+            "time": "2023-02-03T21:45:01+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Snicco\\Component\\BetterWPAPI\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Calvin Alkan",
+                    "email": "calvin@snicco.de"
+                }
+            ],
+            "description": "This small package tries to solve the pain point of not being able to solve to scope code that references WordPress core code.",
+            "support": {
+                "source": "https://github.com/snicco/better-wp-api/tree/v1.6.0"
+            },
+            "install-path": "../snicco/better-wp-api"
+        },
+        {
+            "name": "snicco/better-wp-hooks",
+            "version": "v1.6.0",
+            "version_normalized": "1.6.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/snicco/better-wp-hooks.git",
+                "reference": "fed970e1da32e0a39c275acf337bd71fe2dfdcaf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/snicco/better-wp-hooks/zipball/fed970e1da32e0a39c275acf337bd71fe2dfdcaf",
+                "reference": "fed970e1da32e0a39c275acf337bd71fe2dfdcaf",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.4|^8.0",
+                "snicco/better-wp-api": "^1.6",
+                "snicco/event-dispatcher": "^1.6"
+            },
+            "conflict": {
+                "snicco/better-wp-cache": "<1.6.0",
+                "snicco/better-wp-cache-bundle": "<1.6.0",
+                "snicco/better-wp-cli": "<1.6.0",
+                "snicco/better-wp-cli-testing": "<1.6.0",
+                "snicco/better-wp-hooks-bundle": "<1.6.0",
+                "snicco/better-wp-mail": "<1.6.0",
+                "snicco/better-wp-mail-bundle": "<1.6.0",
+                "snicco/better-wp-mail-testing": "<1.6.0",
+                "snicco/better-wpdb": "<1.6.0",
+                "snicco/better-wpdb-bundle": "<1.6.0",
+                "snicco/blade-bridge": "<1.6.0",
+                "snicco/blade-bundle": "<1.6.0",
+                "snicco/content-negotiation-middleware": "<1.6.0",
+                "snicco/debug-bundle": "<1.6.0",
+                "snicco/default-headers-middleware": "<1.6.0",
+                "snicco/eloquent": "<1.6.0",
+                "snicco/encryption-bundle": "<1.6.0",
+                "snicco/event-dispatcher-testing": "<1.6.0",
+                "snicco/guests-only-middleware": "<1.0.0",
+                "snicco/http-routing": "<1.6.0",
+                "snicco/http-routing-bundle": "<1.6.0",
+                "snicco/http-routing-testing": "<1.6.0",
+                "snicco/https-only-middleware": "<1.6.0",
+                "snicco/illuminate-container-bridge": "<1.6.0",
+                "snicco/kernel": "<1.6.0",
+                "snicco/kernel-testing": "<1.6.0",
+                "snicco/method-override-middleware": "<1.6.0",
+                "snicco/minimal-logger": "<1.6.0",
+                "snicco/must-match-route-middleware": "<1.6.0",
+                "snicco/no-robots-middleware": "<1.6.0",
+                "snicco/open-redirect-protection-middleware": "<1.6.0",
+                "snicco/payload-middleware": "<1.6.0",
+                "snicco/pimple-bridge": "<1.6.0",
+                "snicco/psr7-error-handler": "<1.6.0",
+                "snicco/redirect-middleware": "<1.6.0",
+                "snicco/session": "<1.6.0",
+                "snicco/session-bundle": "<1.6.0",
+                "snicco/session-psr16-bridge": "<1.6.0",
+                "snicco/session-testing": "<1.6.0",
+                "snicco/session-wp-bridge": "<1.6.0",
+                "snicco/share-cookies-middleware": "<1.6.0",
+                "snicco/signed-url": "<1.6.0",
+                "snicco/signed-url-psr15-bridge": "<1.6.0",
+                "snicco/signed-url-psr16-bridge": "<1.6.0",
+                "snicco/signed-url-testing": "<1.6.0",
+                "snicco/signed-url-wp-bridge": "<1.6.0",
+                "snicco/str-arr": "<1.6.0",
+                "snicco/templating": "<1.6.0",
+                "snicco/templating-bundle": "<1.6.0",
+                "snicco/testable-clock": "<1.6.0",
+                "snicco/testing-bundle": "<1.6.0",
+                "snicco/trailing-slash-middleware": "<1.6.0",
+                "snicco/wp-auth-only-middleware": "<1.6.0",
+                "snicco/wp-capability-middleware": "<1.6.0",
+                "snicco/wp-capapility-middleware": "<1.0.0",
+                "snicco/wp-guests-only-middleware": "<1.6.0",
+                "snicco/wp-nonce-middleware": "<1.6.0"
+            },
+            "require-dev": {
+                "codeception/codeception": "^4.1.29",
+                "lucatume/wp-browser": "^3.1.4",
+                "phpunit/phpunit": "^9.5.13"
+            },
+            "time": "2023-02-03T21:45:03+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Snicco\\Component\\BetterWPHooks\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Calvin Alkan",
+                    "email": "calvin@snicco.de"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/snicco/better-wp-hooks/tree/v1.6.0"
+            },
+            "install-path": "../snicco/better-wp-hooks"
+        },
+        {
+            "name": "snicco/better-wp-hooks-bundle",
+            "version": "v1.6.0",
+            "version_normalized": "1.6.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/snicco/better-wp-hooks-bundle.git",
+                "reference": "043c99d1051183608ed61a9e51de9c643f517236"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/snicco/better-wp-hooks-bundle/zipball/043c99d1051183608ed61a9e51de9c643f517236",
+                "reference": "043c99d1051183608ed61a9e51de9c643f517236",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "snicco/better-wp-hooks": "^1.6",
+                "snicco/event-dispatcher": "^1.6",
+                "snicco/kernel": "^1.6"
+            },
+            "conflict": {
+                "snicco/better-wp-api": "<1.6.0",
+                "snicco/better-wp-cache": "<1.6.0",
+                "snicco/better-wp-cache-bundle": "<1.6.0",
+                "snicco/better-wp-cli": "<1.6.0",
+                "snicco/better-wp-cli-testing": "<1.6.0",
+                "snicco/better-wp-mail": "<1.6.0",
+                "snicco/better-wp-mail-bundle": "<1.6.0",
+                "snicco/better-wp-mail-testing": "<1.6.0",
+                "snicco/better-wpdb": "<1.6.0",
+                "snicco/better-wpdb-bundle": "<1.6.0",
+                "snicco/blade-bridge": "<1.6.0",
+                "snicco/blade-bundle": "<1.6.0",
+                "snicco/content-negotiation-middleware": "<1.6.0",
+                "snicco/debug-bundle": "<1.6.0",
+                "snicco/default-headers-middleware": "<1.6.0",
+                "snicco/eloquent": "<1.6.0",
+                "snicco/encryption-bundle": "<1.6.0",
+                "snicco/event-dispatcher-testing": "<1.6.0",
+                "snicco/guests-only-middleware": "<1.0.0",
+                "snicco/http-routing": "<1.6.0",
+                "snicco/http-routing-bundle": "<1.6.0",
+                "snicco/http-routing-testing": "<1.6.0",
+                "snicco/https-only-middleware": "<1.6.0",
+                "snicco/illuminate-container-bridge": "<1.6.0",
+                "snicco/kernel-testing": "<1.6.0",
+                "snicco/method-override-middleware": "<1.6.0",
+                "snicco/minimal-logger": "<1.6.0",
+                "snicco/must-match-route-middleware": "<1.6.0",
+                "snicco/no-robots-middleware": "<1.6.0",
+                "snicco/open-redirect-protection-middleware": "<1.6.0",
+                "snicco/payload-middleware": "<1.6.0",
+                "snicco/pimple-bridge": "<1.6.0",
+                "snicco/psr7-error-handler": "<1.6.0",
+                "snicco/redirect-middleware": "<1.6.0",
+                "snicco/session": "<1.6.0",
+                "snicco/session-bundle": "<1.6.0",
+                "snicco/session-psr16-bridge": "<1.6.0",
+                "snicco/session-testing": "<1.6.0",
+                "snicco/session-wp-bridge": "<1.6.0",
+                "snicco/share-cookies-middleware": "<1.6.0",
+                "snicco/signed-url": "<1.6.0",
+                "snicco/signed-url-psr15-bridge": "<1.6.0",
+                "snicco/signed-url-psr16-bridge": "<1.6.0",
+                "snicco/signed-url-testing": "<1.6.0",
+                "snicco/signed-url-wp-bridge": "<1.6.0",
+                "snicco/str-arr": "<1.6.0",
+                "snicco/templating": "<1.6.0",
+                "snicco/templating-bundle": "<1.6.0",
+                "snicco/testable-clock": "<1.6.0",
+                "snicco/testing-bundle": "<1.6.0",
+                "snicco/trailing-slash-middleware": "<1.6.0",
+                "snicco/wp-auth-only-middleware": "<1.6.0",
+                "snicco/wp-capability-middleware": "<1.6.0",
+                "snicco/wp-capapility-middleware": "<1.0.0",
+                "snicco/wp-guests-only-middleware": "<1.6.0",
+                "snicco/wp-nonce-middleware": "<1.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5.13",
+                "snicco/testing-bundle": "^1.6"
+            },
+            "time": "2023-02-03T21:45:08+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Snicco\\Bundle\\BetterWPHooks\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Calvin Alkan",
+                    "email": "calvin@snicco.de"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/snicco/better-wp-hooks-bundle/tree/v1.6.0"
+            },
+            "install-path": "../snicco/better-wp-hooks-bundle"
+        },
+        {
+            "name": "snicco/event-dispatcher",
+            "version": "v1.6.0",
+            "version_normalized": "1.6.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/snicco/event-dispatcher.git",
+                "reference": "d61694c8d6578fe5df7e31b1109180f16cd24cb1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/snicco/event-dispatcher/zipball/d61694c8d6578fe5df7e31b1109180f16cd24cb1",
+                "reference": "d61694c8d6578fe5df7e31b1109180f16cd24cb1",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "psr/container": "^1.1",
+                "psr/event-dispatcher": "^1.0"
+            },
+            "conflict": {
+                "snicco/better-wp-api": "<1.6.0",
+                "snicco/better-wp-cache": "<1.6.0",
+                "snicco/better-wp-cache-bundle": "<1.6.0",
+                "snicco/better-wp-cli": "<1.6.0",
+                "snicco/better-wp-cli-testing": "<1.6.0",
+                "snicco/better-wp-hooks": "<1.6.0",
+                "snicco/better-wp-hooks-bundle": "<1.6.0",
+                "snicco/better-wp-mail": "<1.6.0",
+                "snicco/better-wp-mail-bundle": "<1.6.0",
+                "snicco/better-wp-mail-testing": "<1.6.0",
+                "snicco/better-wpdb": "<1.6.0",
+                "snicco/better-wpdb-bundle": "<1.6.0",
+                "snicco/blade-bridge": "<1.6.0",
+                "snicco/blade-bundle": "<1.6.0",
+                "snicco/content-negotiation-middleware": "<1.6.0",
+                "snicco/debug-bundle": "<1.6.0",
+                "snicco/default-headers-middleware": "<1.6.0",
+                "snicco/eloquent": "<1.6.0",
+                "snicco/encryption-bundle": "<1.6.0",
+                "snicco/event-dispatcher-testing": "<1.6.0",
+                "snicco/guests-only-middleware": "<1.0.0",
+                "snicco/http-routing": "<1.6.0",
+                "snicco/http-routing-bundle": "<1.6.0",
+                "snicco/http-routing-testing": "<1.6.0",
+                "snicco/https-only-middleware": "<1.6.0",
+                "snicco/illuminate-container-bridge": "<1.6.0",
+                "snicco/kernel": "<1.6.0",
+                "snicco/kernel-testing": "<1.6.0",
+                "snicco/method-override-middleware": "<1.6.0",
+                "snicco/minimal-logger": "<1.6.0",
+                "snicco/must-match-route-middleware": "<1.6.0",
+                "snicco/no-robots-middleware": "<1.6.0",
+                "snicco/open-redirect-protection-middleware": "<1.6.0",
+                "snicco/payload-middleware": "<1.6.0",
+                "snicco/pimple-bridge": "<1.6.0",
+                "snicco/psr7-error-handler": "<1.6.0",
+                "snicco/redirect-middleware": "<1.6.0",
+                "snicco/session": "<1.6.0",
+                "snicco/session-bundle": "<1.6.0",
+                "snicco/session-psr16-bridge": "<1.6.0",
+                "snicco/session-testing": "<1.6.0",
+                "snicco/session-wp-bridge": "<1.6.0",
+                "snicco/share-cookies-middleware": "<1.6.0",
+                "snicco/signed-url": "<1.6.0",
+                "snicco/signed-url-psr15-bridge": "<1.6.0",
+                "snicco/signed-url-psr16-bridge": "<1.6.0",
+                "snicco/signed-url-testing": "<1.6.0",
+                "snicco/signed-url-wp-bridge": "<1.6.0",
+                "snicco/str-arr": "<1.6.0",
+                "snicco/templating": "<1.6.0",
+                "snicco/templating-bundle": "<1.6.0",
+                "snicco/testable-clock": "<1.6.0",
+                "snicco/testing-bundle": "<1.6.0",
+                "snicco/trailing-slash-middleware": "<1.6.0",
+                "snicco/wp-auth-only-middleware": "<1.6.0",
+                "snicco/wp-capability-middleware": "<1.6.0",
+                "snicco/wp-capapility-middleware": "<1.0.0",
+                "snicco/wp-guests-only-middleware": "<1.6.0",
+                "snicco/wp-nonce-middleware": "<1.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5.13",
+                "pimple/pimple": "^3.5"
+            },
+            "suggest": {
+                "phpunit/phpunit": "To use the assertions on TestableEventDispatcher [^9.5]"
+            },
+            "time": "2023-02-03T21:45:00+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Snicco\\Component\\EventDispatcher\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Calvin Alkan",
+                    "email": "calvin@snicco.de"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/snicco/event-dispatcher/tree/v1.6.0"
+            },
+            "install-path": "../snicco/event-dispatcher"
+        },
+        {
+            "name": "snicco/http-routing",
+            "version": "v1.6.0",
+            "version_normalized": "1.6.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/snicco/http-routing.git",
+                "reference": "4b7d40eee4301d69f99440862ec7ef37e33bbee0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/snicco/http-routing/zipball/4b7d40eee4301d69f99440862ec7ef37e33bbee0",
+                "reference": "4b7d40eee4301d69f99440862ec7ef37e33bbee0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-filter": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "nikic/fast-route": "1.3.0",
+                "php": "^7.4|^8.0",
+                "psr/container": "^1.1",
+                "psr/http-factory": "^1.0.0",
+                "psr/http-message": "^1.0.0",
+                "psr/http-server-handler": "^1.0.0",
+                "psr/http-server-middleware": "^1.0.0",
+                "snicco/psr7-error-handler": "^1.6",
+                "snicco/str-arr": "^1.6",
+                "webimpress/safe-writer": "^2.2",
+                "webmozart/assert": "^1.10"
+            },
+            "conflict": {
+                "snicco/better-wp-api": "<1.6.0",
+                "snicco/better-wp-cache": "<1.6.0",
+                "snicco/better-wp-cache-bundle": "<1.6.0",
+                "snicco/better-wp-cli": "<1.6.0",
+                "snicco/better-wp-cli-testing": "<1.6.0",
+                "snicco/better-wp-hooks": "<1.6.0",
+                "snicco/better-wp-hooks-bundle": "<1.6.0",
+                "snicco/better-wp-mail": "<1.6.0",
+                "snicco/better-wp-mail-bundle": "<1.6.0",
+                "snicco/better-wp-mail-testing": "<1.6.0",
+                "snicco/better-wpdb": "<1.6.0",
+                "snicco/better-wpdb-bundle": "<1.6.0",
+                "snicco/blade-bridge": "<1.6.0",
+                "snicco/blade-bundle": "<1.6.0",
+                "snicco/content-negotiation-middleware": "<1.6.0",
+                "snicco/debug-bundle": "<1.6.0",
+                "snicco/default-headers-middleware": "<1.6.0",
+                "snicco/eloquent": "<1.6.0",
+                "snicco/encryption-bundle": "<1.6.0",
+                "snicco/event-dispatcher": "<1.6.0",
+                "snicco/event-dispatcher-testing": "<1.6.0",
+                "snicco/guests-only-middleware": "<1.0.0",
+                "snicco/http-routing-bundle": "<1.6.0",
+                "snicco/http-routing-testing": "<1.6.0",
+                "snicco/https-only-middleware": "<1.6.0",
+                "snicco/illuminate-container-bridge": "<1.6.0",
+                "snicco/kernel": "<1.6.0",
+                "snicco/kernel-testing": "<1.6.0",
+                "snicco/method-override-middleware": "<1.6.0",
+                "snicco/minimal-logger": "<1.6.0",
+                "snicco/must-match-route-middleware": "<1.6.0",
+                "snicco/no-robots-middleware": "<1.6.0",
+                "snicco/open-redirect-protection-middleware": "<1.6.0",
+                "snicco/payload-middleware": "<1.6.0",
+                "snicco/pimple-bridge": "<1.6.0",
+                "snicco/psr7-error-handler": "<1.0.0",
+                "snicco/redirect-middleware": "<1.6.0",
+                "snicco/session": "<1.6.0",
+                "snicco/session-bundle": "<1.6.0",
+                "snicco/session-psr16-bridge": "<1.6.0",
+                "snicco/session-testing": "<1.6.0",
+                "snicco/session-wp-bridge": "<1.6.0",
+                "snicco/share-cookies-middleware": "<1.6.0",
+                "snicco/signed-url": "<1.6.0",
+                "snicco/signed-url-psr15-bridge": "<1.6.0",
+                "snicco/signed-url-psr16-bridge": "<1.6.0",
+                "snicco/signed-url-testing": "<1.6.0",
+                "snicco/signed-url-wp-bridge": "<1.6.0",
+                "snicco/templating": "<1.6.0",
+                "snicco/templating-bundle": "<1.6.0",
+                "snicco/testable-clock": "<1.6.0",
+                "snicco/testing-bundle": "<1.6.0",
+                "snicco/trailing-slash-middleware": "<1.6.0",
+                "snicco/wp-auth-only-middleware": "<1.6.0",
+                "snicco/wp-capability-middleware": "<1.6.0",
+                "snicco/wp-capapility-middleware": "<1.0.0",
+                "snicco/wp-guests-only-middleware": "<1.6.0",
+                "snicco/wp-nonce-middleware": "<1.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5.13",
+                "pimple/pimple": "^3.5",
+                "snicco/http-routing-testing": "^1.6"
+            },
+            "suggest": {
+                "nyholm/psr7": "To use as a fast PSR7 implementation."
+            },
+            "time": "2023-02-03T21:45:11+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Snicco\\Component\\HttpRouting\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Calvin Alkan",
+                    "email": "calvin@snicco.de"
+                }
+            ],
+            "description": "The HTTP and routing component of the snicco framework",
+            "support": {
+                "source": "https://github.com/snicco/http-routing/tree/v1.6.0"
+            },
+            "install-path": "../snicco/http-routing"
+        },
+        {
+            "name": "snicco/http-routing-bundle",
+            "version": "v1.6.0",
+            "version_normalized": "1.6.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/snicco/http-routing-bundle.git",
+                "reference": "f8cb51ff03e5766dc10a61cf33e5c1de0f4c22db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/snicco/http-routing-bundle/zipball/f8cb51ff03e5766dc10a61cf33e5c1de0f4c22db",
+                "reference": "f8cb51ff03e5766dc10a61cf33e5c1de0f4c22db",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-httphandlerrunner": "^2.1",
+                "nyholm/psr7-server": "^1.0.2",
+                "php": "^7.4|^8.0",
+                "psr/log": "^1.1.1",
+                "snicco/better-wp-api": "^1.6",
+                "snicco/better-wp-hooks-bundle": "^1.6",
+                "snicco/event-dispatcher": "^1.6",
+                "snicco/http-routing": "^1.6",
+                "snicco/kernel": "^1.6",
+                "snicco/minimal-logger": "^1.6",
+                "snicco/psr7-error-handler": "^1.6",
+                "snicco/str-arr": "^1.6",
+                "webimpress/safe-writer": "^2.2",
+                "webmozart/assert": "^1.10"
+            },
+            "conflict": {
+                "snicco/better-wp-cache": "<1.6.0",
+                "snicco/better-wp-cache-bundle": "<1.6.0",
+                "snicco/better-wp-cli": "<1.6.0",
+                "snicco/better-wp-cli-testing": "<1.6.0",
+                "snicco/better-wp-hooks": "<1.6.0",
+                "snicco/better-wp-mail": "<1.6.0",
+                "snicco/better-wp-mail-bundle": "<1.6.0",
+                "snicco/better-wp-mail-testing": "<1.6.0",
+                "snicco/better-wpdb": "<1.6.0",
+                "snicco/better-wpdb-bundle": "<1.6.0",
+                "snicco/blade-bridge": "<1.6.0",
+                "snicco/blade-bundle": "<1.6.0",
+                "snicco/content-negotiation-middleware": "<1.6.0",
+                "snicco/debug-bundle": "<1.6.0",
+                "snicco/default-headers-middleware": "<1.6.0",
+                "snicco/eloquent": "<1.6.0",
+                "snicco/encryption-bundle": "<1.6.0",
+                "snicco/event-dispatcher-testing": "<1.6.0",
+                "snicco/guests-only-middleware": "<1.0.0",
+                "snicco/http-routing-testing": "<1.6.0",
+                "snicco/https-only-middleware": "<1.6.0",
+                "snicco/illuminate-container-bridge": "<1.6.0",
+                "snicco/kernel-testing": "<1.6.0",
+                "snicco/method-override-middleware": "<1.6.0",
+                "snicco/must-match-route-middleware": "<1.6.0",
+                "snicco/no-robots-middleware": "<1.6.0",
+                "snicco/open-redirect-protection-middleware": "<1.6.0",
+                "snicco/payload-middleware": "<1.6.0",
+                "snicco/pimple-bridge": "<1.6.0",
+                "snicco/psr7-error-handler": "<1.0.0",
+                "snicco/redirect-middleware": "<1.6.0",
+                "snicco/session": "<1.6.0",
+                "snicco/session-bundle": "<1.6.0",
+                "snicco/session-psr16-bridge": "<1.6.0",
+                "snicco/session-testing": "<1.6.0",
+                "snicco/session-wp-bridge": "<1.6.0",
+                "snicco/share-cookies-middleware": "<1.6.0",
+                "snicco/signed-url": "<1.6.0",
+                "snicco/signed-url-psr15-bridge": "<1.6.0",
+                "snicco/signed-url-psr16-bridge": "<1.6.0",
+                "snicco/signed-url-testing": "<1.6.0",
+                "snicco/signed-url-wp-bridge": "<1.6.0",
+                "snicco/templating": "<1.6.0",
+                "snicco/templating-bundle": "<1.6.0",
+                "snicco/testable-clock": "<1.6.0",
+                "snicco/testing-bundle": "<1.6.0",
+                "snicco/trailing-slash-middleware": "<1.6.0",
+                "snicco/wp-auth-only-middleware": "<1.6.0",
+                "snicco/wp-capability-middleware": "<1.6.0",
+                "snicco/wp-capapility-middleware": "<1.0.0",
+                "snicco/wp-guests-only-middleware": "<1.6.0",
+                "snicco/wp-nonce-middleware": "<1.6.0"
+            },
+            "require-dev": {
+                "codeception/codeception": "^4.1.29",
+                "guzzlehttp/psr7": "^2.1",
+                "laminas/laminas-diactoros": "^2.8",
+                "lucatume/wp-browser": "^3.1.4",
+                "nyholm/psr7": "^1.0.0",
+                "phpunit/phpunit": "^9.5.13",
+                "snicco/http-routing-testing": "^1.6",
+                "snicco/pimple-bridge": "^1.6",
+                "snicco/testing-bundle": "^1.6"
+            },
+            "time": "2023-02-03T21:45:11+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Snicco\\Bundle\\HttpRouting\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Calvin Alkan",
+                    "email": "calvin@snicco.de"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/snicco/http-routing-bundle/tree/v1.6.0"
+            },
+            "install-path": "../snicco/http-routing-bundle"
+        },
+        {
+            "name": "snicco/kernel",
+            "version": "v1.6.0",
+            "version_normalized": "1.6.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/snicco/kernel.git",
+                "reference": "48ae4b717a3853e2b7ea9f526f85f61878c437a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/snicco/kernel/zipball/48ae4b717a3853e2b7ea9f526f85f61878c437a8",
+                "reference": "48ae4b717a3853e2b7ea9f526f85f61878c437a8",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "psr/container": "^1.1",
+                "snicco/str-arr": "^1.6",
+                "webimpress/safe-writer": "^2.2",
+                "webmozart/assert": "^1.10"
+            },
+            "conflict": {
+                "snicco/better-wp-api": "<1.6.0",
+                "snicco/better-wp-cache": "<1.6.0",
+                "snicco/better-wp-cache-bundle": "<1.6.0",
+                "snicco/better-wp-cli": "<1.6.0",
+                "snicco/better-wp-cli-testing": "<1.6.0",
+                "snicco/better-wp-hooks": "<1.6.0",
+                "snicco/better-wp-hooks-bundle": "<1.6.0",
+                "snicco/better-wp-mail": "<1.6.0",
+                "snicco/better-wp-mail-bundle": "<1.6.0",
+                "snicco/better-wp-mail-testing": "<1.6.0",
+                "snicco/better-wpdb": "<1.6.0",
+                "snicco/better-wpdb-bundle": "<1.6.0",
+                "snicco/blade-bridge": "<1.6.0",
+                "snicco/blade-bundle": "<1.6.0",
+                "snicco/content-negotiation-middleware": "<1.6.0",
+                "snicco/debug-bundle": "<1.6.0",
+                "snicco/default-headers-middleware": "<1.6.0",
+                "snicco/eloquent": "<1.6.0",
+                "snicco/encryption-bundle": "<1.6.0",
+                "snicco/event-dispatcher": "<1.6.0",
+                "snicco/event-dispatcher-testing": "<1.6.0",
+                "snicco/guests-only-middleware": "<1.0.0",
+                "snicco/http-routing": "<1.6.0",
+                "snicco/http-routing-bundle": "<1.6.0",
+                "snicco/http-routing-testing": "<1.6.0",
+                "snicco/https-only-middleware": "<1.6.0",
+                "snicco/illuminate-container-bridge": "<1.6.0",
+                "snicco/kernel-testing": "<1.6.0",
+                "snicco/method-override-middleware": "<1.6.0",
+                "snicco/minimal-logger": "<1.6.0",
+                "snicco/must-match-route-middleware": "<1.6.0",
+                "snicco/no-robots-middleware": "<1.6.0",
+                "snicco/open-redirect-protection-middleware": "<1.6.0",
+                "snicco/payload-middleware": "<1.6.0",
+                "snicco/pimple-bridge": "<1.6.0",
+                "snicco/psr7-error-handler": "<1.6.0",
+                "snicco/redirect-middleware": "<1.6.0",
+                "snicco/session": "<1.6.0",
+                "snicco/session-bundle": "<1.6.0",
+                "snicco/session-psr16-bridge": "<1.6.0",
+                "snicco/session-testing": "<1.6.0",
+                "snicco/session-wp-bridge": "<1.6.0",
+                "snicco/share-cookies-middleware": "<1.6.0",
+                "snicco/signed-url": "<1.6.0",
+                "snicco/signed-url-psr15-bridge": "<1.6.0",
+                "snicco/signed-url-psr16-bridge": "<1.6.0",
+                "snicco/signed-url-testing": "<1.6.0",
+                "snicco/signed-url-wp-bridge": "<1.6.0",
+                "snicco/templating": "<1.6.0",
+                "snicco/templating-bundle": "<1.6.0",
+                "snicco/testable-clock": "<1.6.0",
+                "snicco/testing-bundle": "<1.6.0",
+                "snicco/trailing-slash-middleware": "<1.6.0",
+                "snicco/wp-auth-only-middleware": "<1.6.0",
+                "snicco/wp-capability-middleware": "<1.6.0",
+                "snicco/wp-capapility-middleware": "<1.0.0",
+                "snicco/wp-guests-only-middleware": "<1.6.0",
+                "snicco/wp-nonce-middleware": "<1.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5.13",
+                "snicco/pimple-bridge": "^1.6"
+            },
+            "time": "2023-02-03T21:45:10+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Snicco\\Component\\Kernel\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Calvin Alkan",
+                    "email": "calvin@snicco.de"
+                }
+            ],
+            "description": "The core of the snicco framework",
+            "support": {
+                "source": "https://github.com/snicco/kernel/tree/v1.6.0"
+            },
+            "install-path": "../snicco/kernel"
+        },
+        {
+            "name": "snicco/minimal-logger",
+            "version": "v1.6.0",
+            "version_normalized": "1.6.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/snicco/minimal-logger.git",
+                "reference": "61f152cdc1abf0170149161fa3a75bbdb85b5fc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/snicco/minimal-logger/zipball/61f152cdc1abf0170149161fa3a75bbdb85b5fc1",
+                "reference": "61f152cdc1abf0170149161fa3a75bbdb85b5fc1",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "psr/log": "^1.1.1"
+            },
+            "conflict": {
+                "snicco/better-wp-api": "<1.6.0",
+                "snicco/better-wp-cache": "<1.6.0",
+                "snicco/better-wp-cache-bundle": "<1.6.0",
+                "snicco/better-wp-cli": "<1.6.0",
+                "snicco/better-wp-cli-testing": "<1.6.0",
+                "snicco/better-wp-hooks": "<1.6.0",
+                "snicco/better-wp-hooks-bundle": "<1.6.0",
+                "snicco/better-wp-mail": "<1.6.0",
+                "snicco/better-wp-mail-bundle": "<1.6.0",
+                "snicco/better-wp-mail-testing": "<1.6.0",
+                "snicco/better-wpdb": "<1.6.0",
+                "snicco/better-wpdb-bundle": "<1.6.0",
+                "snicco/blade-bridge": "<1.6.0",
+                "snicco/blade-bundle": "<1.6.0",
+                "snicco/content-negotiation-middleware": "<1.6.0",
+                "snicco/debug-bundle": "<1.6.0",
+                "snicco/default-headers-middleware": "<1.6.0",
+                "snicco/eloquent": "<1.6.0",
+                "snicco/encryption-bundle": "<1.6.0",
+                "snicco/event-dispatcher": "<1.6.0",
+                "snicco/event-dispatcher-testing": "<1.6.0",
+                "snicco/guests-only-middleware": "<1.0.0",
+                "snicco/http-routing": "<1.6.0",
+                "snicco/http-routing-bundle": "<1.6.0",
+                "snicco/http-routing-testing": "<1.6.0",
+                "snicco/https-only-middleware": "<1.6.0",
+                "snicco/illuminate-container-bridge": "<1.6.0",
+                "snicco/kernel": "<1.6.0",
+                "snicco/kernel-testing": "<1.6.0",
+                "snicco/method-override-middleware": "<1.6.0",
+                "snicco/must-match-route-middleware": "<1.6.0",
+                "snicco/no-robots-middleware": "<1.6.0",
+                "snicco/open-redirect-protection-middleware": "<1.6.0",
+                "snicco/payload-middleware": "<1.6.0",
+                "snicco/pimple-bridge": "<1.6.0",
+                "snicco/psr7-error-handler": "<1.6.0",
+                "snicco/redirect-middleware": "<1.6.0",
+                "snicco/session": "<1.6.0",
+                "snicco/session-bundle": "<1.6.0",
+                "snicco/session-psr16-bridge": "<1.6.0",
+                "snicco/session-testing": "<1.6.0",
+                "snicco/session-wp-bridge": "<1.6.0",
+                "snicco/share-cookies-middleware": "<1.6.0",
+                "snicco/signed-url": "<1.6.0",
+                "snicco/signed-url-psr15-bridge": "<1.6.0",
+                "snicco/signed-url-psr16-bridge": "<1.6.0",
+                "snicco/signed-url-testing": "<1.6.0",
+                "snicco/signed-url-wp-bridge": "<1.6.0",
+                "snicco/str-arr": "<1.6.0",
+                "snicco/templating": "<1.6.0",
+                "snicco/templating-bundle": "<1.6.0",
+                "snicco/testable-clock": "<1.6.0",
+                "snicco/testing-bundle": "<1.6.0",
+                "snicco/trailing-slash-middleware": "<1.6.0",
+                "snicco/wp-auth-only-middleware": "<1.6.0",
+                "snicco/wp-capability-middleware": "<1.6.0",
+                "snicco/wp-capapility-middleware": "<1.0.0",
+                "snicco/wp-guests-only-middleware": "<1.6.0",
+                "snicco/wp-nonce-middleware": "<1.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5.13"
+            },
+            "time": "2023-02-03T21:45:05+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Snicco\\Component\\MinimalLogger\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Calvin Alkan",
+                    "email": "calvin@snicco.de"
+                }
+            ],
+            "description": "A very minimal psr3 logger for when monolog is too much.",
+            "support": {
+                "source": "https://github.com/snicco/minimal-logger/tree/v1.6.0"
+            },
+            "install-path": "../snicco/minimal-logger"
+        },
+        {
+            "name": "snicco/pimple-bridge",
+            "version": "v1.6.0",
+            "version_normalized": "1.6.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/snicco/pimple-bridge.git",
+                "reference": "89dd3b0ff819b7cf0f6632b626aeed92d9df4886"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/snicco/pimple-bridge/zipball/89dd3b0ff819b7cf0f6632b626aeed92d9df4886",
+                "reference": "89dd3b0ff819b7cf0f6632b626aeed92d9df4886",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "pimple/pimple": "^3.5",
+                "snicco/kernel": "^1.6"
+            },
+            "conflict": {
+                "snicco/better-wp-api": "<1.6.0",
+                "snicco/better-wp-cache": "<1.6.0",
+                "snicco/better-wp-cache-bundle": "<1.6.0",
+                "snicco/better-wp-cli": "<1.6.0",
+                "snicco/better-wp-cli-testing": "<1.6.0",
+                "snicco/better-wp-hooks": "<1.6.0",
+                "snicco/better-wp-hooks-bundle": "<1.6.0",
+                "snicco/better-wp-mail": "<1.6.0",
+                "snicco/better-wp-mail-bundle": "<1.6.0",
+                "snicco/better-wp-mail-testing": "<1.6.0",
+                "snicco/better-wpdb": "<1.6.0",
+                "snicco/better-wpdb-bundle": "<1.6.0",
+                "snicco/blade-bridge": "<1.6.0",
+                "snicco/blade-bundle": "<1.6.0",
+                "snicco/content-negotiation-middleware": "<1.6.0",
+                "snicco/debug-bundle": "<1.6.0",
+                "snicco/default-headers-middleware": "<1.6.0",
+                "snicco/eloquent": "<1.6.0",
+                "snicco/encryption-bundle": "<1.6.0",
+                "snicco/event-dispatcher": "<1.6.0",
+                "snicco/event-dispatcher-testing": "<1.6.0",
+                "snicco/guests-only-middleware": "<1.0.0",
+                "snicco/http-routing": "<1.6.0",
+                "snicco/http-routing-bundle": "<1.6.0",
+                "snicco/http-routing-testing": "<1.6.0",
+                "snicco/https-only-middleware": "<1.6.0",
+                "snicco/illuminate-container-bridge": "<1.6.0",
+                "snicco/kernel-testing": "<1.6.0",
+                "snicco/method-override-middleware": "<1.6.0",
+                "snicco/minimal-logger": "<1.6.0",
+                "snicco/must-match-route-middleware": "<1.6.0",
+                "snicco/no-robots-middleware": "<1.6.0",
+                "snicco/open-redirect-protection-middleware": "<1.6.0",
+                "snicco/payload-middleware": "<1.6.0",
+                "snicco/psr7-error-handler": "<1.6.0",
+                "snicco/redirect-middleware": "<1.6.0",
+                "snicco/session": "<1.6.0",
+                "snicco/session-bundle": "<1.6.0",
+                "snicco/session-psr16-bridge": "<1.6.0",
+                "snicco/session-testing": "<1.6.0",
+                "snicco/session-wp-bridge": "<1.6.0",
+                "snicco/share-cookies-middleware": "<1.6.0",
+                "snicco/signed-url": "<1.6.0",
+                "snicco/signed-url-psr15-bridge": "<1.6.0",
+                "snicco/signed-url-psr16-bridge": "<1.6.0",
+                "snicco/signed-url-testing": "<1.6.0",
+                "snicco/signed-url-wp-bridge": "<1.6.0",
+                "snicco/str-arr": "<1.6.0",
+                "snicco/templating": "<1.6.0",
+                "snicco/templating-bundle": "<1.6.0",
+                "snicco/testable-clock": "<1.6.0",
+                "snicco/testing-bundle": "<1.6.0",
+                "snicco/trailing-slash-middleware": "<1.6.0",
+                "snicco/wp-auth-only-middleware": "<1.6.0",
+                "snicco/wp-capability-middleware": "<1.6.0",
+                "snicco/wp-capapility-middleware": "<1.0.0",
+                "snicco/wp-guests-only-middleware": "<1.6.0",
+                "snicco/wp-nonce-middleware": "<1.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5.13",
+                "snicco/kernel-testing": "^1.6"
+            },
+            "time": "2023-02-03T21:45:10+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Snicco\\Bridge\\Pimple\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Calvin Alkan",
+                    "email": "calvin@snicco.de"
+                }
+            ],
+            "description": "Provides an adapter for the pimple DI container for snicco/kernel",
+            "support": {
+                "source": "https://github.com/snicco/pimple-bridge/tree/v1.6.0"
+            },
+            "install-path": "../snicco/pimple-bridge"
+        },
+        {
+            "name": "snicco/psr7-error-handler",
+            "version": "v1.6.0",
+            "version_normalized": "1.6.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/snicco/psr7-error-handler.git",
+                "reference": "9518c0fa02c226ab8bbe9799a6caed5f99f52ec9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/snicco/psr7-error-handler/zipball/9518c0fa02c226ab8bbe9799a6caed5f99f52ec9",
+                "reference": "9518c0fa02c226ab8bbe9799a6caed5f99f52ec9",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "psr/http-factory": "^1.0.0",
+                "psr/http-message": "^1.0.0",
+                "psr/log": "^1.1.1"
+            },
+            "conflict": {
+                "snicco/better-wp-api": "<1.6.0",
+                "snicco/better-wp-cache": "<1.6.0",
+                "snicco/better-wp-cache-bundle": "<1.6.0",
+                "snicco/better-wp-cli": "<1.6.0",
+                "snicco/better-wp-cli-testing": "<1.6.0",
+                "snicco/better-wp-hooks": "<1.6.0",
+                "snicco/better-wp-hooks-bundle": "<1.6.0",
+                "snicco/better-wp-mail": "<1.6.0",
+                "snicco/better-wp-mail-bundle": "<1.6.0",
+                "snicco/better-wp-mail-testing": "<1.6.0",
+                "snicco/better-wpdb": "<1.6.0",
+                "snicco/better-wpdb-bundle": "<1.6.0",
+                "snicco/blade-bridge": "<1.6.0",
+                "snicco/blade-bundle": "<1.6.0",
+                "snicco/content-negotiation-middleware": "<1.6.0",
+                "snicco/debug-bundle": "<1.6.0",
+                "snicco/default-headers-middleware": "<1.6.0",
+                "snicco/eloquent": "<1.6.0",
+                "snicco/encryption-bundle": "<1.6.0",
+                "snicco/event-dispatcher": "<1.6.0",
+                "snicco/event-dispatcher-testing": "<1.6.0",
+                "snicco/guests-only-middleware": "<1.0.0",
+                "snicco/http-routing": "<1.6.0",
+                "snicco/http-routing-bundle": "<1.6.0",
+                "snicco/http-routing-testing": "<1.6.0",
+                "snicco/https-only-middleware": "<1.6.0",
+                "snicco/illuminate-container-bridge": "<1.6.0",
+                "snicco/kernel": "<1.6.0",
+                "snicco/kernel-testing": "<1.6.0",
+                "snicco/method-override-middleware": "<1.6.0",
+                "snicco/minimal-logger": "<1.6.0",
+                "snicco/must-match-route-middleware": "<1.6.0",
+                "snicco/no-robots-middleware": "<1.6.0",
+                "snicco/open-redirect-protection-middleware": "<1.6.0",
+                "snicco/payload-middleware": "<1.6.0",
+                "snicco/pimple-bridge": "<1.6.0",
+                "snicco/redirect-middleware": "<1.6.0",
+                "snicco/session": "<1.6.0",
+                "snicco/session-bundle": "<1.6.0",
+                "snicco/session-psr16-bridge": "<1.6.0",
+                "snicco/session-testing": "<1.6.0",
+                "snicco/session-wp-bridge": "<1.6.0",
+                "snicco/share-cookies-middleware": "<1.6.0",
+                "snicco/signed-url": "<1.6.0",
+                "snicco/signed-url-psr15-bridge": "<1.6.0",
+                "snicco/signed-url-psr16-bridge": "<1.6.0",
+                "snicco/signed-url-testing": "<1.6.0",
+                "snicco/signed-url-wp-bridge": "<1.6.0",
+                "snicco/str-arr": "<1.6.0",
+                "snicco/templating": "<1.6.0",
+                "snicco/templating-bundle": "<1.6.0",
+                "snicco/testable-clock": "<1.6.0",
+                "snicco/testing-bundle": "<1.6.0",
+                "snicco/trailing-slash-middleware": "<1.6.0",
+                "snicco/wp-auth-only-middleware": "<1.6.0",
+                "snicco/wp-capability-middleware": "<1.6.0",
+                "snicco/wp-capapility-middleware": "<1.0.0",
+                "snicco/wp-guests-only-middleware": "<1.6.0",
+                "snicco/wp-nonce-middleware": "<1.6.0"
+            },
+            "require-dev": {
+                "nyholm/psr7": "^1.0.0",
+                "phpunit/phpunit": "^9.5.13"
+            },
+            "time": "2023-02-03T21:45:10+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Snicco\\Component\\Psr7ErrorHandler\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Calvin Alkan",
+                    "email": "calvin@snicco.de"
+                }
+            ],
+            "description": "A powerful and customizable error handler for psr7 apps.",
+            "support": {
+                "source": "https://github.com/snicco/psr7-error-handler/tree/v1.6.0"
+            },
+            "install-path": "../snicco/psr7-error-handler"
+        },
+        {
+            "name": "snicco/str-arr",
+            "version": "v1.6.0",
+            "version_normalized": "1.6.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/snicco/str-arr.git",
+                "reference": "f63ebc971c3a6a1cd8a200920101f6a92be08634"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/snicco/str-arr/zipball/f63ebc971c3a6a1cd8a200920101f6a92be08634",
+                "reference": "f63ebc971c3a6a1cd8a200920101f6a92be08634",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "^7.4|^8.0"
+            },
+            "conflict": {
+                "snicco/better-wp-api": "<1.6.0",
+                "snicco/better-wp-cache": "<1.6.0",
+                "snicco/better-wp-cache-bundle": "<1.6.0",
+                "snicco/better-wp-cli": "<1.6.0",
+                "snicco/better-wp-cli-testing": "<1.6.0",
+                "snicco/better-wp-hooks": "<1.6.0",
+                "snicco/better-wp-hooks-bundle": "<1.6.0",
+                "snicco/better-wp-mail": "<1.6.0",
+                "snicco/better-wp-mail-bundle": "<1.6.0",
+                "snicco/better-wp-mail-testing": "<1.6.0",
+                "snicco/better-wpdb": "<1.6.0",
+                "snicco/better-wpdb-bundle": "<1.6.0",
+                "snicco/blade-bridge": "<1.6.0",
+                "snicco/blade-bundle": "<1.6.0",
+                "snicco/content-negotiation-middleware": "<1.6.0",
+                "snicco/debug-bundle": "<1.6.0",
+                "snicco/default-headers-middleware": "<1.6.0",
+                "snicco/eloquent": "<1.6.0",
+                "snicco/encryption-bundle": "<1.6.0",
+                "snicco/event-dispatcher": "<1.6.0",
+                "snicco/event-dispatcher-testing": "<1.6.0",
+                "snicco/guests-only-middleware": "<1.0.0",
+                "snicco/http-routing": "<1.6.0",
+                "snicco/http-routing-bundle": "<1.6.0",
+                "snicco/http-routing-testing": "<1.6.0",
+                "snicco/https-only-middleware": "<1.6.0",
+                "snicco/illuminate-container-bridge": "<1.6.0",
+                "snicco/kernel": "<1.6.0",
+                "snicco/kernel-testing": "<1.6.0",
+                "snicco/method-override-middleware": "<1.6.0",
+                "snicco/minimal-logger": "<1.6.0",
+                "snicco/must-match-route-middleware": "<1.6.0",
+                "snicco/no-robots-middleware": "<1.6.0",
+                "snicco/open-redirect-protection-middleware": "<1.6.0",
+                "snicco/payload-middleware": "<1.6.0",
+                "snicco/pimple-bridge": "<1.6.0",
+                "snicco/psr7-error-handler": "<1.6.0",
+                "snicco/redirect-middleware": "<1.6.0",
+                "snicco/session": "<1.6.0",
+                "snicco/session-bundle": "<1.6.0",
+                "snicco/session-psr16-bridge": "<1.6.0",
+                "snicco/session-testing": "<1.6.0",
+                "snicco/session-wp-bridge": "<1.6.0",
+                "snicco/share-cookies-middleware": "<1.6.0",
+                "snicco/signed-url": "<1.6.0",
+                "snicco/signed-url-psr15-bridge": "<1.6.0",
+                "snicco/signed-url-psr16-bridge": "<1.6.0",
+                "snicco/signed-url-testing": "<1.6.0",
+                "snicco/signed-url-wp-bridge": "<1.6.0",
+                "snicco/templating": "<1.6.0",
+                "snicco/templating-bundle": "<1.6.0",
+                "snicco/testable-clock": "<1.6.0",
+                "snicco/testing-bundle": "<1.6.0",
+                "snicco/trailing-slash-middleware": "<1.6.0",
+                "snicco/wp-auth-only-middleware": "<1.6.0",
+                "snicco/wp-capability-middleware": "<1.6.0",
+                "snicco/wp-capapility-middleware": "<1.0.0",
+                "snicco/wp-guests-only-middleware": "<1.6.0",
+                "snicco/wp-nonce-middleware": "<1.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5.13"
+            },
+            "time": "2023-02-03T21:45:07+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Snicco\\Component\\StrArr\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Calvin Alkan",
+                    "email": "calvin@snicco.de"
+                }
+            ],
+            "description": "A standalone implementation of Laravel's Str and Arr classes.",
+            "support": {
+                "source": "https://github.com/snicco/str-arr/tree/v1.6.0"
+            },
+            "install-path": "../snicco/str-arr"
+        },
+        {
+            "name": "webimpress/safe-writer",
+            "version": "2.2.0",
+            "version_normalized": "2.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webimpress/safe-writer.git",
+                "reference": "9d37cc8bee20f7cb2f58f6e23e05097eab5072e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webimpress/safe-writer/zipball/9d37cc8bee20f7cb2f58f6e23e05097eab5072e6",
+                "reference": "9d37cc8bee20f7cb2f58f6e23e05097eab5072e6",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5.4",
+                "vimeo/psalm": "^4.7",
+                "webimpress/coding-standard": "^1.2.2"
+            },
+            "time": "2021-04-19T16:34:45+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2.x-dev",
+                    "dev-develop": "2.3.x-dev",
+                    "dev-release-1.0": "1.0.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Webimpress\\SafeWriter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "description": "Tool to write files safely, to avoid race conditions",
+            "keywords": [
+                "concurrent write",
+                "file writer",
+                "race condition",
+                "safe writer",
+                "webimpress"
+            ],
+            "support": {
+                "issues": "https://github.com/webimpress/safe-writer/issues",
+                "source": "https://github.com/webimpress/safe-writer/tree/2.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/michalbundyra",
+                    "type": "github"
+                }
+            ],
+            "install-path": "../webimpress/safe-writer"
+        },
+        {
+            "name": "webmozart/assert",
+            "version": "1.11.0",
+            "version_normalized": "1.11.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webmozarts/assert.git",
+                "reference": "11cb2199493b2f8a3b53e7f19068fc6aac760991"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/11cb2199493b2f8a3b53e7f19068fc6aac760991",
+                "reference": "11cb2199493b2f8a3b53e7f19068fc6aac760991",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "php": "^7.2 || ^8.0"
+            },
+            "conflict": {
+                "phpstan/phpstan": "<0.12.20",
+                "vimeo/psalm": "<4.6.1 || 4.6.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5.13"
+            },
+            "time": "2022-06-03T18:03:27+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.10-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Webmozart\\Assert\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                }
+            ],
+            "description": "Assertions to validate method input/output with nice error messages.",
+            "keywords": [
+                "assert",
+                "check",
+                "validate"
+            ],
+            "support": {
+                "issues": "https://github.com/webmozarts/assert/issues",
+                "source": "https://github.com/webmozarts/assert/tree/1.11.0"
+            },
+            "install-path": "../webmozart/assert"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}
